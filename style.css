@@ -38,12 +38,12 @@ body {
 }  
 .col-md-10{
     background-color: #494949;
-    padding: 12px;
+    padding: 4px;
     color: #fdfdfd;
     text-align: center;
 }
 .col-md-10 img {
-    border-radius: 70%;
+    border-radius: 60%;
     width: 30%;
     align-items: center;
 }
@@ -52,5 +52,5 @@ body {
 }
 .col-md-10 span:hover{
     color: #ff0000;
-    font-weight: bold;
+    font-weight: lighter;
 }
