@@ -24,7 +24,7 @@ body {
 }
 .col-md-2 ul li a.active{
     color: #fdfdfd;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .col-md-2 img {
     border-radius: 50%;
@@ -34,7 +34,7 @@ body {
 }
 .nav-link.active {
     font-weight: bold;
-    color: blue;
+    color: #0000ff;
 }  
 .col-md-10{
     background-color: #494949;
@@ -52,5 +52,5 @@ body {
 }
 .col-md-10 span:hover{
     color: #ff0000;
-    font-weight: lighter;
+    font-weight: bold;
 }
