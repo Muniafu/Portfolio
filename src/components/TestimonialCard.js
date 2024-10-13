@@ -1,0 +1,1 @@
+// Individual testimonials (text, name. profile picture)

@@ -1,0 +1,1 @@
+// Contains data for projects, skills and testimonials (used to populate components)

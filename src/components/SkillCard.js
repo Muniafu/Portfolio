@@ -1,0 +1,1 @@
+// Individual skill details(icon, name)

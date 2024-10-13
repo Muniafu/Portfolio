@@ -1,0 +1,1 @@
+// Individual project details (image, title, description)
