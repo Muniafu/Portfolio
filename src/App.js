@@ -8,7 +8,6 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Testimonials from "./pages/Testimonials";
 import "./styles/App.css";
-import Footer from "./components/Footer";
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );
