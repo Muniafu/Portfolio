@@ -1,6 +1,7 @@
 // Users to reach out to you (contact form, email, etc)
 
 import React, { useState } from "react";
+import "../styles/Contact.css";
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -30,7 +31,7 @@ const Contact = () => {
 
             {/* Professional Headshot */}
             <section className="contact-headshot">
-                <img src="/" alt="Elam" className="contact-photo" />
+                <img src="../assets/images/contact.png" alt="Elam" className="contact-photo" />
                 <h1>Contact Me</h1>
                 <p>I'd love to hear from you! Feel free to reach out with any questions, inquiries or collaboration opportunities.</p>
             </section>
@@ -90,7 +91,7 @@ const Contact = () => {
                 <h3>Get in Touch</h3>
                 <p>
                     <strong>Email:</strong>
-                    <a href="youremail@example.com">youremail@example.com</a>
+                    <a href="youremail@example.com">elambaraka2019@gmail.com</a>
                 </p>
                 <p>
                     <strong>Phone:</strong>

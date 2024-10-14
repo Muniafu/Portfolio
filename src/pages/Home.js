@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Home.css";
 
 const Home = () => {
 
@@ -13,30 +14,11 @@ const Home = () => {
                 <div className="logo">
                     <h1>My Portfolio</h1>
                 </div>
-                <nav className="navigation">
-                    <ul>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/projects">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/skills">Skills</Link>
-                        </li>
-                        <li>
-                            <Link to="/testimonials">Testimonials</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
             </header>
 
             {/* Her Section */}
             <section  className="hero">
-                <div className="hero-container">
+                <div className="hero-content">
                     <h2>Hi I'm Elam Muniafu</h2>
                     <p>I'm a FullStack Developer, specializing in Software Development. I help businesses and individuals create seamless digital experiences.</p>
                     <Link to="/projects" className="cta-button">View My Work</Link>
@@ -103,7 +85,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <Link to="/testimonials" className="more-testimonials-links">Read More Testimonials</Link>                
+                <Link to="/testimonials" className="more-testimonials-link">Read More Testimonials</Link>                
             </section>
 
             {/* Footer */}
@@ -114,10 +96,10 @@ const Home = () => {
                     <a href="https://instagram.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
                 <div className="contact-info">
-                    <p>Email:
+                    <p>Email: 
                         <a href="youremail@example.com">youremail@example.com</a>
                     </p>
-                    <p>Phone: (Optional) [Your Phone Number]</p>
+                    <p>Phone: 0797465200</p>
                 </div>
             </footer>
         </div>

@@ -1,0 +1,170 @@
+.home-container  {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-header h1 {
+    display: flex;
+    align-items: center;
+    padding: 0 35rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #00FFFF;
+    align-items: center;
+}
+
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    color: #F4A460;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #00FFFF;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #2980B9;
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #3498DB;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.featured-projects {
+    padding: 3rem 2rem;
+}
+
+.featured-projects h3 { 
+    color: #00FFFF;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.projects-grid h4 {    
+    color: #FFFF00;
+}
+
+
+.projects-grid p {   
+    color: #F4A460;
+}
+
+.projects-card {
+    flex: 1;
+    background-color: rgb(128, 128, 128, 0.2);
+    padding: 1rem;
+    text-align: center;
+}
+
+.projects-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.more-projects-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2980B9;
+    text-decoration: none;
+}
+
+.more-projects-link:hover {
+    text-decoration: underline;
+}
+
+.skills-overview {
+    padding: 3rem 2rem;   
+    color: #F4A460;
+}
+
+.skills-overview h3 {
+    color: #00FFFF;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 2rem;
+}
+
+.skill-item {
+    flex: 1;
+    text-align: center;
+}
+
+.skill.icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonials-snippet {
+    padding: 3rem 2rem;   
+    color: #F4A460;
+}
+
+.testimonials-snippet h3 {
+    color: #00FFFF;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.testimonials-card {
+    flex: 1;
+    background-color: rgb(128, 128, 128, 0.2);
+    padding: 1rem;
+}
+
+.more-testimonials-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2980B9;
+    text-decoration: none;
+}
+
+.home-footer {
+    padding: 2rem;
+    background-color: rgb(128, 128, 128, 0.2);
+    color: #f0f0f0;
+    text-align: center;
+}
+
+.social-links a {
+    color: #2980B9;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info a {
+    color: #2980B9;
+}

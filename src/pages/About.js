@@ -1,6 +1,7 @@
 // Display information about you
 
 import React from "react";
+import "../styles/About.css";
 
 const About = () => {
 
@@ -40,7 +41,7 @@ const About = () => {
             <section className="about-cta">
                 <h3>Let's Collaborate</h3>
                 <p>If you're looking to collaborate or have any questions, feel free to 
-                    <a href="/contact">get in touch..</a> I', always open to discussing new ideas, projects or opportunities to connect.
+                    <a href="/contact"> get in touch..</a> I'm always open to discussing new ideas, projects or opportunities to connect.
                 </p>
             </section>
 
