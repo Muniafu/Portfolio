@@ -1,7 +1,7 @@
 // Navigation bar, links to different pages
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
 const Navbar = () => {
@@ -10,22 +10,58 @@ const Navbar = () => {
         <nav className="navbar">
             <ul className="nav-links">
                 <li>
-                    <Link to="/">Home</Link>
+                    <NavLink to="/" 
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("Home")}
+                >
+                    Home
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <NavLink to="/about"
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("About")}
+                    >
+                        About
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <NavLink to="/projects"
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("Projects")}
+                    >
+                        Projects
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/skills">Skills</Link>
+                    <NavLink to="/skills"
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("Skills")}
+                    >
+                        Skills
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/testimonials">Testimonials</Link>
+                    <NavLink to="/testimonials"
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("Testimonials")}
+                    >
+                        Testimonials
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink to="/contact"
+                    exact 
+                    activeClassName="active-link"
+                    onClick={() => ("Contact")}
+                    >
+                        Contact
+                    </NavLink>
                 </li>
             </ul>
         </nav>

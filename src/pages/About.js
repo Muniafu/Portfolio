@@ -60,8 +60,8 @@ const About = () => {
             {/* Links to Social Media */}
             <section className="about-social">
                 <h3>Connect with Me...</h3>
-                <p>Follow me on <a href="[Linkedin Profile]">Linkedin</a>, 
-                or checkout my work on <a href="[Github Profile]">Github</a>.
+                <p>Follow me on <a href="https://linkedin.com/in/elam-baraka-a09b5a1b8">Linkedin</a>, 
+                or checkout my work on <a href="https://github.com/Muniafu">Github</a>.
                 </p>
             </section>
         </div>

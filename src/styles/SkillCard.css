@@ -1,15 +1,21 @@
 .skill-card {
+    display: flex;
     background-color: rgb(128, 128, 128, 0.3);
     border: 1px solid #e0e0e0;
     border-radius: 15px;
     padding: 1.5rem;
     text-align: center;
+    flex-direction: column;
     transition: transform 0.3s ease;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(197, 147, 9, 0.979);
 }
 
 .skill-card:hover {
     transform: scale(1.05);
-    background-color: rgb(244, 164, 96, 0.5);
+    background-color: rgb(244, 164, 96, 0.3);
 }
 
 .skill-icon {
@@ -26,11 +32,40 @@
 
 .proficiency {
     font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     color: #FFFF00;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .skill-description {
     font-size: 1.2rem;
     color: #FF007F;
+}
+
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-page {
+        padding: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
 }

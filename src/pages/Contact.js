@@ -90,35 +90,34 @@ const Contact = () => {
             <section className="contact-info">
                 <h3>Get in Touch</h3>
                 <p>
-                    <strong>Email:</strong>
+                    <strong>Email: </strong>
                     <a href="youremail@example.com">elambaraka2019@gmail.com</a>
                 </p>
                 <p>
-                    <strong>Phone:</strong>
-                    (Optional)
-                    [Insert phone number here if you're comfortable sharing]
+                    <strong>Phone:  </strong>
+                    0797465200
                 </p>
 
                 {/* Social Media Links */}
                 <div className="social-media-links">
                     <h3>Connect with me:</h3>
-                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Linkedin</a>                    
+                    <a href="https://linkedin.com/in/elam-baraka-a09b5a1b8" target="_blank" rel="noopener noreferrer">Linkedin</a>                    
                     <a href="https://www.twitter.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Twitter</a>
-                    <a href="https://www.instagram.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com/Muniafu" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
 
                 {/* Location (Optional) */}
                 <p>
-                    <strong>Location:</strong>
-                    [Your City,
-                    Country
-                    ]
+                    <strong>Location: </strong>
+                    Nairobi,
+                    Kenya
+                    
                 </p>
 
                 {/* Response Time */}
                 <p>
-                    <strong>Response Time:</strong>
-                    I typically response within 24 hours.
+                    <strong>Response Time: </strong>
+                    I typically respond within 24 hours.
                 </p>
 
                 {/* Privacy Statement */}

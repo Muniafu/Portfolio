@@ -1,7 +1,7 @@
+
 .skills-page {
     padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .page-title {
@@ -17,10 +17,37 @@
 .category-title {
     font-size: 2rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
+}
+
+
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-page {
+        padding: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+    }
 }

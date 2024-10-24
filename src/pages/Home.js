@@ -91,13 +91,14 @@ const Home = () => {
             {/* Footer */}
             <footer className="home-footer">
                 <div className="social-links">
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    <a href="https://linkedin.com/in/elam-baraka-a09b5a1b8" target="_blank" rel="noopener noreferrer">Linkedin</a>
                     <a href="https://twitter.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Twitter</a>
                     <a href="https://instagram.com/in/yourprofile" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com/Muniafu" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 <div className="contact-info">
                     <p>Email: 
-                        <a href="youremail@example.com">youremail@example.com</a>
+                        <a href="elambaraka2019@gmail.com"> elambaraka2019@gmail.com</a>
                     </p>
                     <p>Phone: 0797465200</p>
                 </div>
