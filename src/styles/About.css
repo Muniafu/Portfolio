@@ -1,0 +1,87 @@
+/* Base Style */
+.about-page {
+    padding: 50px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Introduction SEction */
+.intro-section {
+    margin-bottom: 50px;
+}
+
+.text-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-content p {
+    font-size: 19.2px;
+    line-height: 1.5;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline Section */
+.timeline-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 60%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.05);
+}
+
+.year {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Skills SEction */
+.skills-section {
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills-item {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-item:hover {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+    color: #fff;
+}

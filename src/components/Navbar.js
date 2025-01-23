@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
 import { FaSun, FaMoon } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import "../styles/Navbar.css";
 import "../styles/style.css";
@@ -25,7 +26,7 @@ const Navbar = () => {
         <nav className={`navbar navbar-expand-lg ${isShrunk ? "shrink" : ""}`}>
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">MyPortfolio</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"arial-controls="navbarNav" aria-expanded="false" aria-label="Toggle">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">

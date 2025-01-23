@@ -1,61 +1,132 @@
-/* Base Styles */
+/* General Styles */
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, 0.3s ease;
+}
+
+/* Navbar */
 .navbar {
     transition: all 0.3s ease-in-out;
-    padding: 10px 35px;
-    font: 20px bolder;
+    padding: 15px;
 }
 
-.navbar-brand {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-/* Shrinking effect on scroll */
 .navbar.shrink {
-    padding: 10px 32px;
-    background-color: rgba(0, 0, 0, 0.8) !important;
-    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 1.5);
 }
 
-/* Light Mode Styles */
+/* Light mode */
 .navbar.light {
-    background-color: #FAF1E5 !important;
-    color: #534558;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
 }
 
 .navbar.light .nav-link {
-    color: #534558;
-    transition: color 0.3s ease-in-out;
+    color: var(--text-color);
 }
 
-.navbar.light .nav-link:hover {
-    color: #F09110;
+.navbar.light .nav-link:hover, .navbar.light .nav-link:focus{
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
-/* Dark Mode Styles */
+/* Dark mode */
 .navbar.dark {
-    background-color: #534558 !important;
-    color: #FAF1E5;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
 }
 
 .navbar.dark .nav-link {
-    color: #FAF1E5;
+    color: var(--text-color);
+}
+
+.navbar.dark .nav-link:hover, .navbar.light .nav-link:focus{
+    color: var(--secondary-bg);
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
     transition: color 0.3s ease-in-out;
 }
 
-.navbar.dark .nav-link:hover {
-    color: #EFC38B;
+.navbar.light .navbar-brand {
+    color: var(--text-color);
+}
+
+.navbar.dark .navbar-brand {
+    color: var(--text-color);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Toggler Button */
+.navbar-toggler {
+    border: none;
+    background: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
 /* Theme Toggle Button */
-.btn-theme-toggle {
+.theme-toggle {
     background: none;
     border: none;
     color: inherit;
-    font-size: 20px;
+    font-size: 19.2px;
+    transition: color 0.3s ease-in-out;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+    transform: rotate(20deg);
+}
+
+/* Grid Layout*/
+.container-fluid {
+    padding: 20px;
+}
+
+/* Hover Effects */
+.project-thumbnail:hover {
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
-.btn-theme-toggle:hover {
-    transform: rotate(20deg);
+/* Active Link */
+.navbar-nav .nav-link.active {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* Centering Navbar Items */
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
