@@ -1,0 +1,53 @@
+/* Light Theme */
+body.light {
+    --primary-bg: #FAF1E5;
+    --secondary-bg: #EFC38B;
+    --text-color: #534558;
+    --accent-color: #F09110;
+}
+
+/* Dark Theme */
+body.dark {
+    --primary-bg: #534558;
+    --secondary-bg: #F09110;
+    --text-color: #FAF1E5;
+    --accent-color: #EFC38B;
+}
+
+/* General Styles */
+body {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--secondary-bg);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.shrink {
+    padding: 10px;
+    background-color: var(--accent-color);
+}
+
+/* Grid Layout */
+.container-fluid {
+    padding: 20px;
+}
+
+/* Hover Effects */
+.project-thumbnail:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

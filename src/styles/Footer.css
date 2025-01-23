@@ -1,84 +1,34 @@
-.footer-container {
-    color: #f5f5f5;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat((auto-fit, minmax(250px, 1fr)));
-    gap: 32px;
-}
-
-.footer-contact .footer-social .footer-links .footer-newsletter {
-    margin-bottom: 1rem;
-}
-
-.footer-contact h3, .footer-social h3, .footer-links h3, .footer-newsletter h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.footer-contact a, .footer-social a, .footer-links a {
-    color: #0a66c2;
-    text-decoration: none;
-}
-
-.footer-contact a:hover, .footer-social a:hover, .footer-links a:hover {
-    text-decoration: underline;
-}
-
-.social-icons a {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    color: #ffffff;
-}
-
-.social-icons a:hover {
-    color: #0a66c2;
-}
-
-.footer-newsletter input[type="email"] {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 15px;
-    width: 80%;
-}
-
-.footer-newsletter button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: #0a66c2;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 0.5rem;
-}
-
-.footer-button {
-    grid-column: span 2;
+/* Footer Base Styles */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
-    margin-top: 2rem;
-    font-size: 0.875rem;
+    padding: 15px 0;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.footer-button ul {
-    list-style: none;
-    padding: 0;
+/* Light Theme */
+.footer.light {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
 }
 
-.footer-button ul li {
-    display: inline;
-    margin: 0 1rem;
+/* Dark Theme */
+.footer.dark {
+    background-color: var(--primary-bg);
+    color: var(--text-color);
 }
 
-.footer-back-to-top {
-    text-align: center;
-    margin-top: 1rem;
+/* Social Links */
+.social-links a{
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.footer-back-to-top a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.footer-back-to-top a:hover {
-    color: #0a66c2;
+.social-links a:hover {
+    transform: scale(1.2);
+    color: var(--accent-color);
 }

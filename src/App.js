@@ -1,31 +1,27 @@
 import React from "react";
+import "./styles/style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Testimonials from "./pages/Testimonials";
-import "./styles/App.css";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
 
   return (
-    <div className="background">
-      <Router>
-        <Navbar/>
+          
+    <ThemeProvider>
+      <Router>      
+        <Navbar />    
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
-    </div>
-  );
+    </ThemeProvider>    
+  )
 };
 
 export default App;
