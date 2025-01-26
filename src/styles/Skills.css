@@ -1,0 +1,52 @@
+/* Base Styles */
+.skills-page {
+    padding: 50px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Skill Item */
+.skill-item {
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Hover Effect */
+.skill-item:hover  {
+    transform: scale(1.1);
+    background-color: var(--accent-color);
+    color: #ffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Animation */
+.skill-item.visible {
+    opacity: 1;
+    transform: all 0.5s ease-in-out;
+}
+
+/* Icons */
+.skill-item i {
+    font-size: 32px;
+    margin-bottom: 10px;
+}

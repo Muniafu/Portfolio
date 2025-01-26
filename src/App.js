@@ -7,8 +7,10 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import ProjectPage from "./pages/Projects";
 import Footer from "./components/Footer";
+import Skills from "./pages/Skills";
+import ProjectPage from "./pages/Projects";
+import Contact from "./components/Contact";
 
 function App() {
 
@@ -20,8 +22,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>
